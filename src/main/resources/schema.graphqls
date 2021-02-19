@@ -1,0 +1,15 @@
+type Query {
+    getBookByName(name : String!) : Book
+}
+
+type Book {
+    name: String
+    authors: [Author]
+    price: Int
+    publishedDate: String
+}
+
+type Author {
+    name: String
+    birthday: String
+}
